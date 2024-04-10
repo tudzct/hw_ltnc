@@ -12,15 +12,15 @@ int main() {
 
     vector<vector<int>> arr(n);
 
-    for(int i = 0; i < n; ++i) {
+    for(int i = 0; i < n; i++) {
         int k; cin >> k;
         arr[i].resize(k);
-        for(int j = 0; j < k; ++j) {
+        for(int j = 0; j < k; j++) {
             cin >> arr[i][j];
         }
     }
     
-    for(int i = 0; i < q; ++i) {
+    for(int i = 0; i < q; i++) {
         int a, b;
         cin >> a >> b;
         cout << arr[a][b] << endl;
